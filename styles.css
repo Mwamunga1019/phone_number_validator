@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+#results {
+  text-align: center;
+  color: rgb(243, 70, 70);
+  font-weight: bold;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #3b3b4f;
+}
+
+h1 {
+  color: white;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  background-color: black;
+  min-height: 500px;
+  padding: 40px 15px;
+  border-radius: 12px;
+  min-width: 250px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.inputel {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfe2;
+  gap: 15px;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.camera {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 3.5%;
+}
+
+.button {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-size: 20px;
+  padding: 1px 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 1px rgb(235, 228, 228);
+}
