@@ -3,7 +3,7 @@
   /* border: 2px solid red; */
 }
 
-#results {
+#results-div {
   text-align: center;
   color: rgb(243, 70, 70);
   font-weight: bold;
@@ -14,6 +14,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #3b3b4f;
+}
+
+.hidden {
+  display: none;
 }
 
 h1 {
@@ -36,7 +40,7 @@ h1 {
   min-width: 250px;
 }
 
-input[type="number"] {
+input[type="text"] {
   padding: 10px;
   border-radius: 12px;
 }

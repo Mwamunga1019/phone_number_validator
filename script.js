@@ -1,7 +1,7 @@
 const checkBtn = document.getElementById("check-btn");
 const clearButn = document.getElementById("clear-btn");
 const inputEl = document.getElementById("user-input");
-const resultsEl = document.getElementById("results");
+const resultsEl = document.getElementById("results-div");
 
 const numberValidator = function () {
   let regex = /^(1\s?)?(\(\d{3}\)|\d{3})([\s\-]?)\d{3}([\s\-]?)\d{4}$/;
@@ -9,8 +9,10 @@ const numberValidator = function () {
   if (inputEl.value === "") {
     alert("Please provide a phone number");
   } else if (regex.test(inputEl.value)) {
+    resultsEl.classList.remove("hidden");
     resultsEl.textContent = `Valid US number: ${inputEl.value}`;
   } else {
+    resultsEl.classList.remove("hidden");
     resultsEl.textContent = `Invalid US number: ${inputEl.value}`;
   }
 };
@@ -18,6 +20,6 @@ const numberValidator = function () {
 checkBtn.addEventListener("click", numberValidator);
 
 clearButn.addEventListener("click", function () {
-  resultsEl.textContent = "";
+  resultsEl.innerHTML = "";
   inputEl.value = "";
 });
